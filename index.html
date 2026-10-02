@@ -8,41 +8,51 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header><p>WEBD2003 - Relative Layout Homework</p></header>
-    <section> 
+    <header>
+        <p>WEBD2003 - Relative Layout Homework</p>
+    </header>
+
+    <section class="banner"> 
         <h1>Dogs in Costumes!</h1>
         <p>Halloween is coming up and I thought it would be nice to showcase some dogs in costumes. I won’t lie though I'm not a fan of dogs, I'm more of a cat person, but these dogs may change my mind. </p>
     </section>
+
     <section>
         <h2>Dog Gallery</h2>
-        <div>
-            <div>
-                <img src="img/hotdog-dog.avif" width="182" height="182" alt="A dog in a hot-dog costume">
-                <p>Ah, yes! The iconic hot-dog dog costume.</p>
+        <div class="dog-gallery">
+            <div class="flex fixed">
+                <div class="col-1-3">
+                    <img src="img/hotdog-dog.avif" width="182" height="182" alt="A dog in a hot-dog costume">
+                    <p>Ah, yes! The iconic hot-dog dog costume.</p>
+                </div>
+                <div class="col-1-3">
+                    <img src="img/delivery-dog-img.avif" width="182" height="182" alt="A dog in a two-man delivery dog costume">
+                    <p>This one confused me for a second but super cute!</p>
+                </div>
+                <div class="col-1-3">
+                    <img src="img/happy-shrek-dog-img.avif" width="182" height="182" alt="A dog in a Shrek costume">
+                    <p>This one made me giggle so I had to include it.</p>
+                </div>
             </div>
-            <div>
-                <img src="img/delivery-dog-img.avif" width="182" height="182" alt="A dog in a two-man delivery dog costume">
-                <p>This one confused me for a second but super cute!</p>
-            </div>
-            <div>
-                <img src="img/happy-shrek-dog-img.avif" width="182" height="182" alt="A dog in a Shrek costume">
-                <p>This one made me giggle so I had to include it.</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="img/wizard-dog.avif" width="182" height="182" alt="A dog in a wizard costume">
-                <p>
-                    I love the hat on this dog. They remind me of a tiny wizard. The pumpkins in the background really brings this all together.
-                </p>
-            </div>
-            <div>
-                <img src="img/astro-dog.avif" width="182" height="182" alt="A dog in an astronaut costume">
-                <p>
-                    What an adorable astronaut! The arms makes it look like they’re flexing. Watch Project Hail Mary it’s a very good movie about space!
-                </p>
+            <div class="flex fixed">
+                <div class="col-1-2">
+                    <img src="img/wizard-dog.avif" width="182" height="182" alt="A dog in a wizard costume">
+                    <p>
+                        I love the hat on this dog. They remind me of a tiny wizard. The pumpkins in the background really brings this all together.
+                    </p>
+                </div>
+                <div class="col-1-2">
+                    <img src="img/astro-dog.avif" width="182" height="182" alt="A dog in an astronaut costume">
+                    <p>
+                        What an adorable astronaut! The arms makes it look like they’re flexing. Watch Project Hail Mary it’s a very good movie about space!
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2023 Dogs in Costumes. All rights reserved.</p>
+    </footer>
 </body>
 </html>

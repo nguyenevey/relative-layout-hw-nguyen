@@ -1,0 +1,90 @@
+
+:root {
+    --navy-blue: #0d1b2a;
+    --white: #fff;
+
+    --heading-font: 'Georgia', 'Times New Roman', Times, serif;
+    --body-font: 'Segoe UI', tahoma, geneva, verdana, sans-serif;
+    --h1-heading: 64px;
+    --h2-heading: 38px;
+    --body-text: 18px;
+}
+
+body {
+    color: var(--navy-blue);
+    font-family: var(--body-font);
+    font-size: var(--body-text);
+    line-height: 1.5;
+}
+
+section {
+    text-align: center;
+    max-width: 1119px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: var(--h1-heading);
+    line-height: 1;
+}
+
+h1,
+.banner {
+    margin-bottom: 48px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: var(--h2-heading);
+    margin-bottom: 24px;
+}
+
+.fixed {
+    width: 1119px;
+}
+.flex {
+    display: flex;
+    padding-bottom: 24px;
+    gap: 24px;
+}
+
+.col-1-3 {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    width: 33.333%;
+    padding: 16px;
+}
+
+.col-1-2 {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    width: 50%;
+    padding: 16px;
+}
+
+div p {
+    text-align: left;
+    padding-left: 20px;
+}
+
+div:not(.dog-gallery) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dog-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+header,
+footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 16px;
+    text-align: center;
+}
